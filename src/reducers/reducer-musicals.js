@@ -11,7 +11,7 @@ export default function(state = [], action){
     return action.payload.data;
   }
   else{
-    return state; 
+    return state;
   }
 
 }

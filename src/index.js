@@ -9,7 +9,7 @@ import Promise from 'redux-promise';
 import App from './components/app';
 import Instructions from './components/instructions';
 import NavBar from './components/navBar'
-import MusicalsContainer from './components/musicalscontainer';
+import MusicalsContainer from './components/musicalcontainer';
 import MusicalInfoBox from './components/musicalInfoBox';
 import IndividualMusical from './components/individualMusical';
 
@@ -27,7 +27,7 @@ ReactDOM.render(
         <IndexRoute component={Instructions} />
         <Route path="musicals" component={MusicalsContainer} /> //name path whatever you want
         <Route path="musicalInfoBox" component={MusicalInfoBox} />
-        <Route path="musical" component={IndividualMusical} />
+        <Route path="musical/:musicalname" component={IndividualMusical} /> 
 
 
 
